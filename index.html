@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mines Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Mines Game</h1>
+
+    <!-- Login/Register Form -->
+    <div class="login-form">
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <div class="button-row">
+        <button onclick="login()">Login</button>
+        <button onclick="register()">Register</button>
+      </div>
+    </div>
+
+    <!-- Game Area -->
+    <div id="game-area" class="hidden">
+      <p><strong>User:</strong> <span id="user-label"></span></p>
+      <p><strong>Balance:</strong> $<span id="balance">0.00</span></p>
+
+      <div class="info">
+        <input type="number" id="bet-amount" step="0.01" min="0.01" placeholder="Enter the amount you want to bet">
+        <input type="number" id="mine-count" min="1" max="24" placeholder="Enter number of mines">
+        <div class="button-row">
+            <button id="start-button" onclick="startGame()">Start Game</button>
+            <button id="cashout-button" onclick="cashOut()">Cash Out</button>
+        </div>
+      </div>
+
+      <div id="grid"></div>
+      <p id="result"></p>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>

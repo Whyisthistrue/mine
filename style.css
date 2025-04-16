@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 700px;
+    padding: 20px;
+    background: #1f1f1f;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 128, 0.2);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #00ff88;
+  }
+  
+  .login-form input,
+  .info input {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #2e2e2e;
+    color: #fff;
+  }
+  
+  .button-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  button {
+    flex: 1;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #00ff88;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #00cc6a;
+  }
+  
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .tile {
+    width: 60px;
+    height: 60px;
+    background-color: #444;
+    border: 2px solid #333;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .tile.revealed {
+    background-color: #00ff88;
+    cursor: default;
+    color: #000;
+  }
+  
+  .tile.mine {
+    background-color: #ff4c4c;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
