@@ -1,4 +1,4 @@
-const serverUrl = 'https://node62.lunes.host:3261';
+const serverUrl = 'http://node62.lunes.host:3261';
 
 let username = "";
 let balance = 0;
